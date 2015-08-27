@@ -1,0 +1,11 @@
+h1
+  = @item.name
+
+h4 Description
+p= @item.description
+h4 brand
+p= @item.brand
+h4 Condition
+p= @item.condition
+
+= link_to 'Back', items_path

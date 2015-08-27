@@ -1,0 +1,16 @@
+h1 Your Gear
+= link_to 'Add New Gear', new_item_path
+table
+  thead
+    tr
+      th Name
+      th Brand
+      th Condition
+      th Purchase Date
+  tbody
+    - @items.each do |thing|
+      tr
+        td = thing.name
+        td = thing.brand
+        td = thing.condition
+        td = thing.date_purchased
